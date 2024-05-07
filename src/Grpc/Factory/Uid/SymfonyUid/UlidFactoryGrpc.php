@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid;
+namespace RpHaven\Protobuf\Grpc\Factory\Uid\SymfonyUid;
 
 use RpHaven\App\Uid\Id\Uuid\Type\Ulid as UlidType;
-use Rphaven\Protobuf\Grpc\Factory\Uid\GrpcUidFactory;
-use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\SupportsGrpcUidType;
-use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\SupportsUidType;
-use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\ToGrpcUid;
-use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\ToUid;
+use RpHaven\Protobuf\Grpc\Factory\Uid\GrpcUidFactory;
+use RpHaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\SupportsGrpcUidType;
+use RpHaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\SupportsUidType;
+use RpHaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\ToGrpcUid;
+use RpHaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\ToUid;
 use Rphaven\Common\V1\Uid as GrpcUid;
 use Rphaven\Common\V1\UidType;
 use RpHaven\Uid\Uid\Type;

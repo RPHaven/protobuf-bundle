@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits;
+namespace RpHaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits;
 
 use RpHaven\Uid\Uid;
 use RpHaven\Uid\Uid\Type;

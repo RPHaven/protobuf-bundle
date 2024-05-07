@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rphaven\Protobuf\Grpc\Factory\Uid;
+namespace RpHaven\Protobuf\Grpc\Factory\Uid;
 
 use Rphaven\Common\V1\Uid as GrpcUid;
 use RpHaven\Uid\UidFactory;

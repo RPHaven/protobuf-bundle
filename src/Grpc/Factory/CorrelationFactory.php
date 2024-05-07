@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Rphaven\Protobuf\Grpc\Factory;
+namespace RpHaven\Protobuf\Grpc\Factory;
 
 use RpHaven\App\Correlation;
 use RpHaven\App\Uid\Ulid\Id\CorrelationUlid;
-use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\UlidFactoryGrpc;
+use RpHaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\UlidFactoryGrpc;
 use Rphaven\Common\V1\Correlation as GrpcCorrelation;
 
 
