@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace RpHaven\Protobuf\Bundle\Extension;
+namespace RpHaven\Protobuf\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
