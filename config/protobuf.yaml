@@ -7,3 +7,8 @@ services:
 
   RpHaven\Protobuf\:
     resource: '../src/'
+
+  RpHaven\Protobuf\Grpc\Factory\Uid\GrpcUidFactory: '@RpHaven\Protobuf\Grpc\Factory\Uid\ChainFactoryFactoryGrpc'
+
+  RpHaven\Protobuf\Grpc\Factory\Uid\ChainFactoryFactoryGrpc:
+    factory: [null, 'init']
