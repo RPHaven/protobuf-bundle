@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Rphaven\Common\Utils\Factory\Uid\SymfonyUid;
+namespace Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid;
 
-use Rphaven\Common\Utils\Factory\Uid\GrpcUidFactory;
-use Rphaven\Common\Utils\Factory\Uid\SymfonyUid\Traits\SupportsGrpcUidType;
-use Rphaven\Common\Utils\Factory\Uid\SymfonyUid\Traits\SupportsUidType;
-use Rphaven\Common\Utils\Factory\Uid\SymfonyUid\Traits\ToUid;
-use Rphaven\Common\Utils\Factory\Uid\SymfonyUid\Traits\ToGrpcUid;
+use Rphaven\Protobuf\Grpc\Factory\Uid\GrpcUidFactory;
+use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\SupportsGrpcUidType;
+use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\SupportsUidType;
+use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\ToUid;
+use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\ToGrpcUid;
 use Rphaven\Common\V1\Uid;
 use Rphaven\Common\V1\UidType;
 use RpHaven\Uid\Uid\Type;

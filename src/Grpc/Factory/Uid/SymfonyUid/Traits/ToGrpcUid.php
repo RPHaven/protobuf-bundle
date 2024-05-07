@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Rphaven\Common\Utils\Factory\Uid\SymfonyUid\Traits;
+namespace Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits;
 
-use Rphaven\Common\Utils\Factory\Uid\Exception\UnhandledUidType;
+use Rphaven\Protobuf\Grpc\Factory\Uid\Exception\UnhandledUidType;
 use Rphaven\Common\V1\Uid as GrpcUid;
 use RpHaven\Uid\Uid;
 use RpHaven\Uid\Uid\Type;

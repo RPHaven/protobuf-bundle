@@ -17,7 +17,9 @@
         "symfony/http-kernel": "^7.0",
         "symfony/uid": "^7.0",
         "rphaven/protobuf": "*",
-        "rphaven/uid": "*"
+        "rphaven/uid": "*",
+        "rphaven/common-app": "*",
+        "rphaven/app-symfony": "*"
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "*",
@@ -52,6 +54,10 @@
         }
     },
     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rphaven/app-symfony"
+        },
         {
             "type": "vcs",
             "url": "https://github.com/rphaven/common-app"

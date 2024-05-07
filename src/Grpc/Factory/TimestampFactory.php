@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rphaven\Common\Utils\Factory;
+namespace Rphaven\Protobuf\Grpc\Factory;
 
 use DateTime;
 use DateTimeImmutable;

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Rphaven\Common\Utils\Factory;
+namespace Rphaven\Protobuf\Grpc\Factory;
 
 use DateTimeImmutable;
 use DateTimeInterface;
-use Rphaven\Common\Utils\Factory\Uid\SymfonyUid\UlidFactoryGrpc;
-use Rphaven\Common\Utils\Uid\ErrorId;
+use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\UlidFactoryGrpc;
+use Rphaven\Protobuf\Grpc\Uid\ErrorId;
 use Rphaven\Common\V1\Error;
 
 use Stringable;

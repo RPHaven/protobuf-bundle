@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Rphaven\Common\Utils\Factory\Uid;
+namespace Rphaven\Protobuf\Grpc\Factory\Uid;
 
-use Rphaven\Common\Utils\Factory\Uid\Exception\ChainFactoryMustHaveAtLeastOneFactory;
-use Rphaven\Common\Utils\Factory\Uid\SymfonyUid\UlidFactoryGrpc;
-use Rphaven\Common\Utils\Factory\Uid\SymfonyUid\UuidFactoryGrpc;
+use Rphaven\Protobuf\Grpc\Factory\Uid\Exception\ChainFactoryMustHaveAtLeastOneFactory;
+use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\UlidFactoryGrpc;
+use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\UuidFactoryGrpc;
 use Rphaven\Common\V1\Uid as GrpcUid;
-use RpHaven\Uid\Factory\UidFactory;
+use RpHaven\Uid\UidFactory;
 use RpHaven\Uid\Uid;
 
 final readonly class ChainFactoryFactoryGrpc implements GrpcUidFactory

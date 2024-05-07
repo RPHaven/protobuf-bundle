@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rphaven\Common\Utils\Factory\Uid\Exception;
+namespace Rphaven\Protobuf\Grpc\Factory\Uid\Exception;
 
 use InvalidArgumentException;
 use RpHaven\Uid\Uid;

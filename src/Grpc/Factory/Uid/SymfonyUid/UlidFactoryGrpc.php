@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Rphaven\Common\Utils\Factory\Uid\SymfonyUid;
+namespace Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid;
 
-use Rphaven\Common\Utils\Factory\Uid\GrpcUidFactory;
-use Rphaven\Common\Utils\Factory\Uid\SymfonyUid\Traits\SupportsGrpcUidType;
-use Rphaven\Common\Utils\Factory\Uid\SymfonyUid\Traits\SupportsUidType;
-use Rphaven\Common\Utils\Factory\Uid\SymfonyUid\Traits\ToGrpcUid;
-use Rphaven\Common\Utils\Factory\Uid\SymfonyUid\Traits\ToUid;
+use RpHaven\App\Uid\Id\Uuid\Type\Ulid as UlidType;
+use Rphaven\Protobuf\Grpc\Factory\Uid\GrpcUidFactory;
+use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\SupportsGrpcUidType;
+use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\SupportsUidType;
+use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\ToGrpcUid;
+use Rphaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\ToUid;
 use Rphaven\Common\V1\Uid as GrpcUid;
 use Rphaven\Common\V1\UidType;
 use RpHaven\Uid\Uid\Type;
-use RpHaven\Uid\Uuid\Type\Ulid as UlidType;
 use Symfony\Component\Uid\Ulid;
 
 final readonly class UlidFactoryGrpc implements GrpcUidFactory
