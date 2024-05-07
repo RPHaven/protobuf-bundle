@@ -1,0 +1,68 @@
+{
+    "name": "rphaven/protobuf-bundle",
+    "description": "Protobuf definitions",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Barney Hanlon",
+            "email": "barney@shrikeh.net"
+        }
+    ],
+    "require": {
+        "php": ">=8.3",
+        "ext-grpc": "*",
+        "symfony/config": "^7.0",
+        "symfony/dependency-injection": "^7.0",
+        "symfony/http-kernel": "^7.0",
+        "symfony/uid": "^7.0",
+        "rphaven/protobuf": "*",
+        "rphaven/uid": "*"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "ergebnis/composer-normalize": "*",
+        "infection/infection": "*",
+        "phpspec/prophecy-phpunit": "*",
+        "phpstan/phpstan": "*",
+        "phpunit/php-code-coverage": "*",
+        "phpunit/phpcov": "*",
+        "phpunit/phpunit": "*",
+        "squizlabs/php_codesniffer": "*",
+        "symfony/dotenv": "*",
+        "vimeo/psalm": "*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "RpHaven\\Protobuf\\": "src"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "composer-normalize": {
+            "indent-size": 2,
+            "indent-style": "space"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rphaven/common-app"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/rphaven/uid"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/rphaven/protobuf"
+        }
+    ]
+}
