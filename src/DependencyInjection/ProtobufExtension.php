@@ -15,7 +15,7 @@ final class ProtobufExtension extends Extension
     {
         $loader = new YamlFileLoader(
             $container,
-            new FileLocator(dirname(__DIR__, 3) . '/config')
+            new FileLocator(dirname(__DIR__, 2) . '/config')
         );
 
         $loader->load('protobuf.yaml');
