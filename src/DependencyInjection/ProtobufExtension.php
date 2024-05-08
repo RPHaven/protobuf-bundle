@@ -23,5 +23,6 @@ final class ProtobufExtension extends Extension
 
         $container->registerForAutoconfiguration(CommandFactory::class)
             ->addTag('protobuf.command_factory');
+
     }
 }

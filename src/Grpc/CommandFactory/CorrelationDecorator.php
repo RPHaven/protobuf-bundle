@@ -17,7 +17,7 @@ use Symfony\Component\DependencyInjection\Attribute\AutowireDecorated;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 #[AsDecorator(
-    decorates: CommandFactory::class,
+    decorates: CorrelatedCommandFactory::class,
     priority: 5,
     onInvalid: ContainerInterface::IGNORE_ON_INVALID_REFERENCE,
 )]

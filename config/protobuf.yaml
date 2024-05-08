@@ -13,3 +13,4 @@ services:
   RpHaven\Protobuf\Grpc\Hydration\Uid\ChainFactoryFactoryGrpc:
     factory: [null, 'init']
 
+
