@@ -8,7 +8,7 @@ services:
   RpHaven\Protobuf\:
     resource: '../src/'
 
-  RpHaven\Protobuf\Grpc\Hydration\Uid\GrpcUidFactory: '@RpHaven\Protobuf\Grpc\Factory\Uid\ChainFactoryFactoryGrpc'
+  RpHaven\Protobuf\Grpc\Hydration\Uid\GrpcUidFactory: '@RpHaven\Protobuf\Grpc\Hydration\Uid\ChainFactoryFactoryGrpc'
 
   RpHaven\Protobuf\Grpc\Hydration\Uid\ChainFactoryFactoryGrpc:
     factory: [null, 'init']
