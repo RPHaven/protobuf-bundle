@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace RpHaven\Protobuf\Grpc\Factory;
 
-use RpHaven\App\Correlation;
-use RpHaven\App\Uid\Ulid\Id\CorrelationUlid;
+use Google\Protobuf\Internal\Message;
+use RpHaven\App\Message\Correlation;
+use RpHaven\App\Uid\Id\Ulid\CorrelationUlid;
 use RpHaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\UlidFactoryGrpc;
 use Rphaven\Common\V1\Correlation as GrpcCorrelation;
 
@@ -25,11 +26,14 @@ final readonly class CorrelationFactory
         ]);
     }
 
-    public function fromGrpcCorrelation(GrpcCorrelation $correlation): Correlation
+    public function fromGrpcMessage(Message $message): ?Correlation
     {
-        return new Correlation(
-            $this->timestampFactory->fromTimestamp($correlation->getTimestamp()),
-            CorrelationUlid::fromString($this->ulidFactory->fromGrpc($correlation->getId())->toRfc4122()),
-        );
+        if (method_exists($message, 'getCorrelation')) {
+            $correlation = $message->getCorrelation();
+            return new Correlation(
+                $this->timestampFactory->fromTimestamp($correlation->getTimestamp()),
+                CorrelationUlid::fromString($this->ulidFactory->fromGrpc($correlation->getId())->toRfc4122()),
+            );
+        }
     }
 }
