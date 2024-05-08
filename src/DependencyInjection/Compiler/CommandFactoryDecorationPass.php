@@ -20,7 +20,6 @@ final readonly class CommandFactoryDecorationPass implements CompilerPassInterfa
                 continue;
             }
             $container->getDefinition($id)->setDecoratedService(CorrelationDecorator::class);
-            throw new \RuntimeException($id);
         }
     }
 }
