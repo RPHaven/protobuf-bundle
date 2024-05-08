@@ -13,6 +13,3 @@ services:
   RpHaven\Protobuf\Grpc\Hydration\Uid\ChainFactoryFactoryGrpc:
     factory: [null, 'init']
 
-  RpHaven\Protobuf\Grpc\CommandFactory\CorrelationDecorator:
-    tags:
-      - { name: protobuf.command_factory.decorator }
