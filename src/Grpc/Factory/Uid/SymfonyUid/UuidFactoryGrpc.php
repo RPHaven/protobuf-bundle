@@ -12,7 +12,7 @@ use RpHaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\Traits\ToGrpcUid;
 use Rphaven\Common\V1\Uid;
 use Rphaven\Common\V1\UidType;
 use RpHaven\Uid\Uid\Type;
-use RpHaven\Uid\Uuid\Type\Uuid as UuidType;
+use RpHaven\App\Uid\Id\Uuid\Type\Uuid as UuidType;
 use Symfony\Component\Uid\AbstractUid;
 use Symfony\Component\Uid\Uuid;
 
