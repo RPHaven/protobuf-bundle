@@ -6,7 +6,6 @@ namespace RpHaven\Protobuf\Bundle;
 
 use RpHaven\Protobuf\DependencyInjection\Compiler\CommandFactoryDecorationPass;
 use RpHaven\Protobuf\DependencyInjection\ProtobufExtension;
-use Symfony\Component\DependencyInjection\Compiler\PassConfig;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
@@ -19,7 +18,10 @@ final class Protobuf extends ABstractBundle
 
     public function build(ContainerBuilder $container): void
     {
-        $container->addCompilerPass(new CommandFactoryDecorationPass());
+        $container->addCompilerPass(
+            pass: new CommandFactoryDecorationPass(),
+            priority: 100,
+        );
         parent::build($container);
     }
 }

@@ -22,6 +22,7 @@ final readonly class CommandFactoryDecorationPass implements CompilerPassInterfa
             }
             if ($commandFactoryDefinition->hasTag('protobuf.command_factory.decorator')) {
                 $commandFactoryDefinition->setDecoratedService(null);
+                $commandFactoryDefinition->addTag('container.ignore_attributes');
             }
         }
     }
