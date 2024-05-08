@@ -26,7 +26,7 @@ final readonly class CorrelationDecorator implements CommandFactory
 {
 
     public function __construct(
-        #[AutowireDecorated] private CommandFactory $innerCommandFactory,
+        #[AutowireDecorated] private CorrelatedCommandFactory $innerCommandFactory,
         private CorrelationFactory $correlationFactory,
     ) {
 
