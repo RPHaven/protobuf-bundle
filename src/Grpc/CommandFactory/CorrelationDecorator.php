@@ -11,7 +11,9 @@ use RpHaven\Protobuf\Grpc\CommandFactory;
 use RpHaven\Protobuf\Grpc\CommandFactory\Exception\UnableToCreateCorrelation;
 use RpHaven\Protobuf\Grpc\Factory\CorrelationFactory;
 use Spiral\RoadRunner\GRPC\ContextInterface;
+use Symfony\Component\DependencyInjection\Attribute\AsDecorator;
 
+#[AsDecorator(decorates: CommandFactory::class, priority: 5)]
 final readonly class CorrelationDecorator implements CommandFactory
 {
 
