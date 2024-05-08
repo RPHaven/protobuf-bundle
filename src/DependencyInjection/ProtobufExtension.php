@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace RpHaven\Protobuf\DependencyInjection;
 
+use RpHaven\Protobuf\Grpc\CommandFactory;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
@@ -19,5 +20,8 @@ final class ProtobufExtension extends Extension
         );
 
         $loader->load('protobuf.yaml');
+
+        $container->registerForAutoconfiguration(CommandFactory::class)
+            ->addTag('protobuf.command_factory');
     }
 }

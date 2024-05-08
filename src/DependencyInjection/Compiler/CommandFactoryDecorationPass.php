@@ -14,10 +14,13 @@ final readonly class CommandFactoryDecorationPass implements CompilerPassInterfa
 
     public function process(ContainerBuilder $container)
     {
-        $taggedServices = $container->findTaggedServiceIds('protobuf.command_factory.decorator');
+        $taggedCommandFactories = $container->findTaggedServiceIds('protobuf.command_factory');
 
-        foreach ($taggedServices as $id => $tags) {
-            $container->getDefinition($id)->setDecoratedService(null);
+        foreach ($taggedCommandFactories as $id => $tags) {
+            if ($id === CorrelationDecorator::class) {
+                continue;
+            }
+            $container->getDefinition($id)->setDecoratedService(CorrelationDecorator::class);
         }
     }
 }
