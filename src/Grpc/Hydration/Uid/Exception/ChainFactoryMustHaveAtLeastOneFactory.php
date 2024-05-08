@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace RpHaven\Protobuf\Grpc\Factory\Uid\Exception;
+namespace RpHaven\Protobuf\Grpc\Hydration\Uid\Exception;
 
 use InvalidArgumentException;
 

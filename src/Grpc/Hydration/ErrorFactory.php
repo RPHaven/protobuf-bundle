@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace RpHaven\Protobuf\Grpc\Factory;
+namespace RpHaven\Protobuf\Grpc\Hydration;
 
 use DateTimeImmutable;
 use DateTimeInterface;
-use RpHaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\UlidFactoryGrpc;
+use RpHaven\Protobuf\Grpc\Hydration\Uid\SymfonyUid\UlidFactoryGrpc;
 use RpHaven\Protobuf\Grpc\Uid\ErrorId;
 use Rphaven\Common\V1\Error;
 

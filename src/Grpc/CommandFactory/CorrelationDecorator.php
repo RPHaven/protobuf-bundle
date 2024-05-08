@@ -9,7 +9,7 @@ use RpHaven\App\Message\Command;
 use RpHaven\App\Message\Correlated;
 use RpHaven\Protobuf\Grpc\CommandFactory;
 use RpHaven\Protobuf\Grpc\CommandFactory\Exception\UnableToCreateCorrelation;
-use RpHaven\Protobuf\Grpc\Factory\CorrelationFactory;
+use RpHaven\Protobuf\Grpc\Hydration\CorrelationFactory;
 use Spiral\RoadRunner\GRPC\ContextInterface;
 use Symfony\Component\DependencyInjection\Attribute\AsDecorator;
 

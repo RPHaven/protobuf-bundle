@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace RpHaven\Protobuf\Grpc\Factory;
+namespace RpHaven\Protobuf\Grpc\Hydration;
 
 use DateTime;
 use DateTimeImmutable;

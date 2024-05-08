@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace RpHaven\Protobuf\Grpc\Factory;
+namespace RpHaven\Protobuf\Grpc\Hydration;
 
 use Google\Protobuf\Internal\Message;
 use RpHaven\App\Message\Correlation;
 use RpHaven\App\Uid\Id\Ulid\CorrelationUlid;
-use RpHaven\Protobuf\Grpc\Factory\Uid\SymfonyUid\UlidFactoryGrpc;
+use RpHaven\Protobuf\Grpc\Hydration\Uid\SymfonyUid\UlidFactoryGrpc;
 use Rphaven\Common\V1\Correlation as GrpcCorrelation;
 
 
