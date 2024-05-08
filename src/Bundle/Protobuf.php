@@ -19,8 +19,7 @@ final class Protobuf extends ABstractBundle
 
     public function build(ContainerBuilder $container): void
     {
+        $container->addCompilerPass(new CommandFactoryDecorationPass());
         parent::build($container);
-
-        $container->addCompilerPass(new CommandFactoryDecorationPass(), PassConfig::TYPE_BEFORE_OPTIMIZATION);
     }
 }

@@ -17,6 +17,9 @@ final readonly class CommandFactoryDecorationPass implements CompilerPassInterfa
 
         foreach ($taggedCommandFactories as $id => $tags) {
             $commandFactoryDefinition = $container->getDefinition($id);
+            if (!$decorated = $commandFactoryDefinition->getDecoratedService()) {
+                continue;
+            }
             if ($commandFactoryDefinition->hasTag('protobuf.command_factory.decorator')) {
                 $commandFactoryDefinition->setDecoratedService(null);
             }
