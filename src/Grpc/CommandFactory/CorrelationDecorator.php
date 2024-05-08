@@ -12,13 +12,19 @@ use RpHaven\Protobuf\Grpc\CommandFactory\Exception\UnableToCreateCorrelation;
 use RpHaven\Protobuf\Grpc\Hydration\CorrelationFactory;
 use Spiral\RoadRunner\GRPC\ContextInterface;
 use Symfony\Component\DependencyInjection\Attribute\AsDecorator;
+use Symfony\Component\DependencyInjection\Attribute\AutowireDecorated;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
-#[AsDecorator(decorates: CommandFactory::class, priority: 5)]
+#[AsDecorator(
+    decorates: CommandFactory::class,
+    priority: 5,
+    onInvalid: ContainerInterface::IGNORE_ON_INVALID_REFERENCE,
+)]
 final readonly class CorrelationDecorator implements CommandFactory
 {
 
     public function __construct(
-        private CommandFactory $innerCommandFactory,
+        #[AutowireDecorated] private CommandFactory $innerCommandFactory,
         private CorrelationFactory $correlationFactory,
     ) {
 
